@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+  }
+  body{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background:url(../img/joke.jpg);
+      background-attachment:fixed;
+      background-repeat: no-repeat;
+      background-size: cover; 
+  }
+  body::before{
+    content: '';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+     height: 50vh;
+      width: 50vw;
+      overflow:hidden;
+      border-radius: 1rem;
+      background: rgb(20,209,209);
+      background: linear-gradient(257deg, rgba(20,209,209,0.4995040252429097) 6%, rgba(36, 38, 177, 0.984) 96%);
+      -webkit-border-radius: 1rem;
+      -moz-border-radius: 1rem;
+      -ms-border-radius: 1rem;
+      -o-border-radius: 1rem;
+  }
+  
+  h1, h2{
+      text-align: center;
+      color: aqua;  
+      font-size: 44px;
+      z-index: 2;
+  }
+  
+  .joke{
+      position: relative;
+      margin-top:30px;
+      font-size:24px;
+      font-family: roboto;
+      overflow: hidden;
+      text-align: center;
+      color: aqua;  
+  }
+  .btn{
+      position:absolute;
+      top: 80%;
+      left: 50%;
+      z-index: 4;
+      transform:translate(-50%,-50%);
+      height: 7vh;
+      width: 24vw;
+      text-align: center;
+      font-size: 24px;
+      font-family: Mulish;
+      cursor: pointer;
+      background-color: aqua;
+      border: none;
+      overflow: hidden;
+      border-radius: 2rem;
+      -webkit-transform:translate(-50%,-50%);
+      -moz-transform:translate(-50%,-50%);
+      -ms-transform:translate(-50%,-50%);
+      -o-transform:translate(-50%,-50%);
+      -webkit-border-radius: 2rem;
+      -moz-border-radius: 2rem;
+      -ms-border-radius: 2rem;
+      -o-border-radius: 2rem;
+  }
+  @media screen and (max-width: 600px){
+    .btn{
+      height:9vh;
+      width:50vw;
+      font-size:18px;
+    }
+    h1, h2{
+      text-align: center;
+      color: aqua;  
+      font-size: 24px;
+  }
+  .joke{
+    font-size: 16px;
+  }
+  .container{
+  margin-top:0;
+  top: 0;
+  }
+  }
